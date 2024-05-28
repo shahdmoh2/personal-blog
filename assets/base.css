@@ -1,0 +1,141 @@
+@import url(./blog.css);
+@import url(./post.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+main {
+    background-color: #ffffff;
+    max-width: 90%;
+    min-width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --mainFont: "Poppins", sans-serif;
+    --subFont: "Inter", sans-serif;
+    --mainColor: #e783da;
+}
+
+body {
+    font-family: var(--mainFont);
+}
+
+header {
+    background-color: #d27979;
+}
+
+p,
+h1,
+h2 {
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .header {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #444;
+    color: #fff;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
